@@ -36,7 +36,6 @@ const EditPrompt = () => {
     setSubmitting(true);
 
     if (!promptId) return alert("Prompt Id not found");
-    console.log("Update the Post");
     try {
       const response = await fetch(`/api/prompt/${promptId}`, {
         method: "PATCH",
